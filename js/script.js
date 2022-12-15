@@ -1,18 +1,19 @@
-let amountElement = document.querySelector(".js-amount");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
-let currencyFocusElement = document.querySelector(".js-currencyType");
-let rateEuroElement = document.querySelector(".js-rateEuro");
-let rateUsdElement = document.querySelector(".js-rateUsd");
-let rateGbpElement = document.querySelector(".js-rateGbp");
-let rateBtcElement = document.querySelector(".js-rateBtc");
-let rateSvcElement = document.querySelector(".js-rateSvc");
+{
+const amountElement = document.querySelector(".js-amount");
+const formElement = document.querySelector(".js-form");
+const resultElement = document.querySelector(".js-result");
+const currencyFocusElement = document.querySelector(".js-currencyType");
+const rateEuroElement = document.querySelector(".js-rateEuro");
+const rateUsdElement = document.querySelector(".js-rateUsd");
+const rateGbpElement = document.querySelector(".js-rateGbp");
+const rateBtcElement = document.querySelector(".js-rateBtc");
+const rateSvcElement = document.querySelector(".js-rateSvc");
 
-let euro = 4.6913;
-let usd = 4.5119;
-let gbp = 5.4557;
-let btc = 74533;
-let svc = 1.94;
+const euro = 4.6913;
+const usd = 4.5119;
+const gbp = 5.4557;
+const btc = 74533;
+const svc = 1.94;
 
 rateEuroElement.innerText = euro;
 rateUsdElement.innerText = usd;
@@ -23,8 +24,8 @@ rateSvcElement.innerText = svc;
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let currencyChoice = currencyFocusElement.value;
-    let amount = +amountElement.value;
+    const currencyChoice = currencyFocusElement.value;
+    const amount = +amountElement.value;
     let rate;
 
 
@@ -53,3 +54,4 @@ formElement.addEventListener("submit", (event) => {
     const result = amount / rate;
     resultElement.innerText = `${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currencyChoice}`;
 })
+}
