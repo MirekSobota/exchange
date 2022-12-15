@@ -1,0 +1,47 @@
+.form {
+    border: 2px solid rgb(231, 226, 226);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form__list {
+    list-style: none;
+    font-style: italic;
+    padding: 0;
+}
+
+.form__list--rate {
+    font-weight: bold;
+}
+
+.form__currencyType {
+    background-color: rgba(241, 241, 241, 0.951);
+    width: 50%;
+    padding: 3px;
+}
+
+.form__filed {
+    width: 50%;
+    padding: 3px;
+}
+
+.form__button {
+    margin: 10px;
+    width: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.form__button:hover {
+    background-color: rgb(226, 212, 212);
+}
+
+.form__button:active {
+    background-color: rgb(207, 184, 184);
+}
+
+.form__return {
+    font-weight: bold;
+    margin-left: 40%;
+}

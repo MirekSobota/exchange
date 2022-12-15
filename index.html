@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Kantor-Lista</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Kantor Online</h1>
+        <form class="form js-form">
+            <fieldset>
+                <legend>Przelicznik walut</legend>
+                <h2>Aktualny kurs</h2>
+                <ul class="form__list">
+                    <li>Aktualny kurs EUR/PLN: <span class="js-rateEuro form__list--rate"></span></li>
+                    <li>Aktualny kurs USD/PLN: <span class="js-rateUsd form__list--rate"></span></li>
+                    <li>Aktualny kurs GBP/PLN: <span class="js-rateGbp form__list--rate"></span></li>
+                    <li>Aktualny kurs BTC/PLN: <span class="js-rateBtc form__list--rate"></span></li>
+                    <li>Aktualny kurs SVC/PLN: <span class="js-rateSvc form__list--rate"></span></li>
+                </ul>
+
+                <label class="form__label">
+                    Waluta obca<br>
+                        <select class="form__currencyType js-currencyType">
+                            <option value="EUR">EURO</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="BTC">BTC</option>
+                            <option value="SVC">SVC</option>
+                        </select>
+                </label>
+
+                <p>
+                    <label class="form__label">
+                        Kwota w złotych<br>
+                            <input class="form__filed js-amount" required type="number" min="1" step="any"
+                                placeholder="Kwota PLN">
+
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button class="form__button">Wymień</button>
+            </p>
+            <p class="form__return">Otrzymasz: <span class="js-result "> N/A</span></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
