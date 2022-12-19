@@ -1,7 +1,6 @@
 {
-    const amountElement = document.querySelector(".js-amount");
+
     const formElement = document.querySelector(".js-form");
-    const resultElement = document.querySelector(".js-result");
     const currencyFocusElement = document.querySelector(".js-currencyType");
 
     const euro = 4.6913;
@@ -24,13 +23,12 @@
         rateSvcElement.innerText = svc;
     }
 
-    const holdSubmit = formElement.addEventListener("submit", (event) => {
+    formElement.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        calculatingValue();
-        
+
+
         const currencyChoice = currencyFocusElement.value;
-        const amount = +amountElement.value;
         let rate;
 
 
@@ -59,16 +57,27 @@
             }
         }
 
-       
 
-        const result = amount / rate;
+        calculatingValue();
+
+
+
+        const calculatingResult = () => {
+            const resultElement = document.querySelector(".js-result");
+            const amountElement = document.querySelector(".js-amount");
+            const amount = +amountElement.value;
+
+            resultElement.innerText = `${amount.toFixed(2)} PLN =  ${(amount / rate).toFixed(2)} ${currencyChoice}`;
+        }
         
-        resultElement.innerText = `${amount.toFixed(2)} PLN =  ${result.toFixed(2)} ${currencyChoice}`;
+        calculatingResult();
+
     })
-const init = () => {
-    exchangeRate();
-    holdSubmit();
+
+    const init = () => {
+        exchangeRate();
+    }
+
+    init();
 }
-   
-init();
-}
+
