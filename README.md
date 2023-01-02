@@ -3,6 +3,7 @@
 ## Demo
 https://mireksobota.github.io/Exchange/
 
+![Gif](https://github.com/MirekSobota/Exchange/blob/main/images/exchange.gif?raw=true)
 
 ### Description
 
