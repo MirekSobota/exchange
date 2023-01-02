@@ -10,3 +10,8 @@ https://mireksobota.github.io/Exchange/
 Simple currency calculator, this is demo price is not valid!
 
 Language: *Polish*
+
+### Tools
+- HTML
+- CSS
+- JavaScript
