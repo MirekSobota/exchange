@@ -3,10 +3,10 @@
     const formElement = document.querySelector(".js-form");
     const currencyFocusElement = document.querySelector(".js-currencyType");
 
-    const euro = 4.6913;
-    const usd = 4.5119;
-    const gbp = 5.4557;
-    const btc = 74533;
+    const euro = 10.69;
+    const usd = 45.51;
+    const gbp = 55.45;
+    const btc = 19.25;
     const svc = 1.94;
 
     const exchangeRate = () => {
