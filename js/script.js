@@ -27,31 +27,27 @@
         event.preventDefault();
 
         const currencyChoice = currencyFocusElement.value;
-        let rate;
+        
 
 
         const calculatingValue = () => {
 
             switch (currencyChoice) {
                 case "EUR":
-                    rate = euro;
-                    break;
-
+                    return euro;
+                    
                 case "USD":
-                    rate = usd;
-                    break;
-
+                    return usd;
+                    
                 case "GBP":
-                    rate = gbp;
-                    break;
-
+                    return gbp;
+            
                 case "BTC":
-                    rate = btc;
-                    break;
+                    return btc;
 
                 case "SVC":
-                    rate = svc;
-                    break;
+                    return svc;
+                
             }
         }
 
@@ -61,11 +57,12 @@
             const resultElement = document.querySelector(".js-result");
             const amountElement = document.querySelector(".js-amount");
             const amount = +amountElement.value;
+            const rate = calculatingValue();
 
             resultElement.innerText = `${amount.toFixed(2)} PLN =  ${(amount / rate).toFixed(2)} ${currencyChoice}`;
         }
 
-        calculatingValue();
+        
         calculatingResult();
     })
 
