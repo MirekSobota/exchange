@@ -5,10 +5,12 @@
 .background::after {
     content: '';
     background: url("../images/background.jpg") no-repeat center center;
+    background-size: 100%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: auto;
     width: 100%;
+    max-width: 1350px;
     height: 100%;
     z-index: -1;
     opacity: 0.4;

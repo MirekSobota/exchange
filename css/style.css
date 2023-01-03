@@ -9,11 +9,11 @@ html {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 650px;
     width: auto;
     margin: 0 auto;
     padding: 20px 15px;
     font-family: 'Lato', sans-serif;
-    opacity: 1;
+   
 }
 
