@@ -26,11 +26,11 @@
     formElement.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        const currencyChoice = currencyFocusElement.value;
+        
         
 
 
-        const calculatingValue = () => {
+        const calculatingValue = (currencyChoice) => {
 
             switch (currencyChoice) {
                 case "EUR":
@@ -57,7 +57,8 @@
             const resultElement = document.querySelector(".js-result");
             const amountElement = document.querySelector(".js-amount");
             const amount = +amountElement.value;
-            const rate = calculatingValue();
+            const currencyChoice = currencyFocusElement.value;
+            const rate = calculatingValue(currencyChoice);
 
             resultElement.innerText = `${amount.toFixed(2)} PLN =  ${(amount / rate).toFixed(2)} ${currencyChoice}`;
         }
