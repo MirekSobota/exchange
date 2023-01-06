@@ -19,7 +19,7 @@
         rateSvcElement.innerText = svc;
     }
 
-    const gettingCurrency = (currencyChoice) => {
+    const getCurrency = (currencyChoice) => {
 
         switch (currencyChoice) {
             case "EUR":
@@ -40,8 +40,8 @@
         }
     }
 
-    const calculatingResult = (currencyChoice, amount) => {
-        const rate = gettingCurrency(currencyChoice);
+    const calculateResult = (currencyChoice, amount) => {
+        const rate = getCurrency(currencyChoice);
         const result = amount / rate;
         return result;
     }
@@ -60,7 +60,7 @@
         let currencyChoice = currencyFocusElement.value;
         const amountElement = document.querySelector(".js-amount");
         const amount = +amountElement.value;
-        const result = calculatingResult(currencyChoice, amount);
+        const result = calculateResult(currencyChoice, amount);
         showResult(amount, result, currencyChoice);
 
     })
