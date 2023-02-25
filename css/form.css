@@ -2,10 +2,16 @@
     text-shadow: 1px 2px 3px;
     color: rgb(32, 25, 25);
     margin: 10px 20px;
+    
 }
+
 
 .form {
     padding: 20px;
+}
+
+.form__legend{
+     color: black;
 }
 
 .form__list {
@@ -48,4 +54,9 @@
 .form__return {
     font-weight: bold;
     margin-left: 40%;
+}
+.form__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

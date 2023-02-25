@@ -23,22 +23,22 @@
 <body>
     <div class="background">
         <div class="container">
-            <h1 class="header">Kantor Online</h1>
+            <h1 class="header form__flex">Kantor Online</h1>
             <form class="form js-form">
                 <fieldset>
-                    <legend>Przelicznik walut</legend>
+                    <legend class="form__flex">Przelicznik walut</legend>
                     <h2>Aktualny kurs</h2>
-                    <ul class="form__list">
-                        <li>Aktualny kurs EUR/PLN: <span class="js-rateEuro form__list--rate"></span></li>
-                        <li>Aktualny kurs USD/PLN: <span class="js-rateUsd form__list--rate"></span></li>
-                        <li>Aktualny kurs GBP/PLN: <span class="js-rateGbp form__list--rate"></span></li>
-                        <li>Aktualny kurs BTC/PLN: <span class="js-rateBtc form__list--rate"></span></li>
-                        <li>Aktualny kurs SVC/PLN: <span class="js-rateSvc form__list--rate"></span></li>
+                    <ul class="form__list form__flex">
+                        <li>Aktualny kurs EUR/PLN: <span class="js-rateEuro form__list--rate form__flex"></span></li>
+                        <li>Aktualny kurs USD/PLN: <span class="js-rateUsd form__list--rate form__flex"></span></li>
+                        <li>Aktualny kurs GBP/PLN: <span class="js-rateGbp form__list--rate form__flex"></span></li>
+                        <li>Aktualny kurs BTC/PLN: <span class="js-rateBtc form__list--rate form__flex"></span></li>
+                        <li>Aktualny kurs SVC/PLN: <span class="js-rateSvc form__list--rate form__flex"></span></li>
                     </ul>
 
-                    <label class="form__label">
+                    <label class="form__label form__flex">
                         Waluta obca<br>
-                        <select class="form__currencyType js-currencyType">
+                        <select class="form__currencyType js-currencyType ">
                             <option value="EUR">EURO</option>
                             <option value="USD">USD</option>
                             <option value="GBP">GBP</option>
@@ -48,7 +48,7 @@
                     </label>
 
                     <p>
-                        <label class="form__label">
+                        <label class="form__label form__flex">
                             Kwota w złotych<br>
                             <input class="form__filed js-amount" required type="number" min="1" step="any"
                                 placeholder="Kwota PLN">
